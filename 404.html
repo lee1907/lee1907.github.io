@@ -65,6 +65,13 @@
       box-shadow: 0 10px 30px rgba(124, 77, 255, 0.4);
     }
   </style>
+  <script>
+    var path = window.location.pathname;
+    if (path.indexOf('/bykdg-website') === 0) {
+      var newPath = path.replace('/bykdg-website', '');
+      window.location.replace('https://bykdgstudio.github.io' + (newPath || '/'));
+    }
+  </script>
 </head>
 <body>
   <div class="code">404</div>
